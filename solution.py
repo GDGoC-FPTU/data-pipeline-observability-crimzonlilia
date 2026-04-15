@@ -2,7 +2,7 @@
 ==============================================================
 Day 10 Lab: Build Your First Automated ETL Pipeline
 ==============================================================
-Student ID: AI20K-2A20260009  (<-- Thay XXXX bang ma so cua ban)
+Student ID: AI20K-0209  (<-- Thay XXXX bang ma so cua ban)
 Name: Nguyen Thi Dieu Linh
 
 Nhiem vu:
