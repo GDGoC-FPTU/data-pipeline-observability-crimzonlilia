@@ -8,7 +8,15 @@
 
 ## Mo ta
 
-(Mo ta ngan gon bai lab va nhung gi ban da lam)
+Bài lab này giới thiệu về **Xây dựng Automated ETL Pipeline** (Extract-Validate-Transform-Load). 
+
+**Những gì được hoàn thành:**
+-  **Extract (Trích xuất):** Đọc dữ liệu từ file JSON `raw_data.json` (5 records)
+-  **Validate (Kiểm tra):** Lọc dữ liệu không hợp lệ (price ≤ 0, category rỗng) → 2 records bị loại
+-  **Transform (Chuyển đổi):** Tính giá giảm 10% (discounted_price), chuẩn hóa category (Title Case), thêm timestamp
+-  **Load (Lưu trữ):** Xuất 3 records hợp lệ ra file CSV `processed_data.csv`
+
+**Kết quả:** 3 sản phẩm được xử lý thành công (Laptop, Chair, Monitor)
 
 ---
 
@@ -44,4 +52,7 @@ python agent_simulation.py
 
 ## Ket qua
 
-(Tom tat ket qua: bao nhieu records da xu ly, bao nhieu bi loai, v.v.)
+- **Tổng records được xử lý:** 5
+- **Records hợp lệ:** 3 ✅
+- **Records bị loại:** 2 ❌ (1 có giá âm, 1 có category rỗng)
+- **Output file:** `processed_data.csv` (chứa các trường: id, product, price, category, discounted_price, processed_at)
